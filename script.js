@@ -18,5 +18,5 @@ function hatja()
 
 function jahat()
 {
-    document.getElementById("visszajelzes").innerHTML = `<span>Köszönjük a visszajelzését!</span>`
+    document.getElementById("visszajelzes").innerHTML = `<br><span>Köszönjük a visszajelzését!</span>`
 }
