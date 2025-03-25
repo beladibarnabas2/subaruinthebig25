@@ -12,7 +12,7 @@ function hatja()
     {
         coKibocsatas * 2.68;
     }
-    document.getElementById("co").innerHTML = coKibocsatas + ` kg kibocsátás`
+    document.getElementById("co").innerHTML = coKibocsatas + ` Kg CO₂ kibocsátás`
     
 }
 

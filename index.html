@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="webstyle.css">
 </head>
 <body>
-    <nav>
+    <div id="fofele">
+        <a href="#navigation"><button title="Vissza a tetejére">&#8657;</button></a>
+    </div>
+    <nav id="navigation">
             <img src="kepek/logo.svg" alt="logó" id="logo">
-            <a href="">Something</a>
-            <a href="">Something</a>
-            <a href="">Something</a>
-            <a href="">Something</a>
+            <a href="https://www.fenntarthatosagi.temahet.hu/" target="_blank">Fenntarthatóság</a>
+            <a href="https://kekbolygoalapitvany.hu/rolunk/" target="_blank">Kék-Bolygó</a>
+            <a href="#co2">CO₂ kibocsáltás</a>
+            <a href="#kapcs">Kapcsolat</a>
         </nav>
     <header>
         
@@ -23,38 +26,72 @@
     </header>
     <div class="header_button">
         <h4>&#9888;Te is tehetsz környezetünk megóvásáért! Mi segítünk hogyan kezd el!&#9888;</h4>
-        <a href="http://">Katt te gecis</a>
+        <a href="#co2">Mit tegyek?</a>
     </div>
     <main>
-
-
-
-
-        <form action="" name="cigany">
-            <label for="futas">Hány km-t haladsz a járműveddel egy év eltellte után?</label>
-            <input type="number" name="futas" id="futasteljesitmeny" placeholder=""><br>
-
-            <label for="fogy">Mennyi a fogyasztása az autódnak?(/100km)</label>
-            <input type="number" name="fogy" id="fogyasztas" placeholder="12">
-
-            <label for="uzemanyag">Mivel megy az autód?</label>
-            <select name="uzemanyag" id="">
-                <option value="benzin">Benzin</option>
-                <option value="dizel">Dízel</option>
-            </select><br>
-            <button type="button" onclick="hatja()">Számolás</button>
-            <h4 id="co">
-
-            </h4>
-            <label for="csuszka">Rate-eljen minket</label>
-            <input type="range" name="csuszka" id="" oninput="jahat()">
-            <p id="visszajelzes"></p>
+        <div id="hero-section">
+            <h3>&#127758; "Itt az idő, hogy együtt tegyünk egy zöldebb jövőért! A Fenntarthatósági Hét célja, hogy inspiráljon, informáljon és gyakorlati tippekkel lásson el mindenkit, aki szeretne környezettudatosabb életet élni."</h3>
+        </div>
+        <div class="container1">
+            <div class="container_img">
+                <img src="kepek/swamp.jpg" alt="mocsár">
+            </div>
+            <div class="content">
+                <h2>Üdv a Fenntarthatósági Héten!</h2>
+                <hr>           
+                <p>Minden hazai és határon túli nevelési-oktatási intézmény a munkatervében meghatározott módon vehet részt a Témahéthez kapcsolódó programokon, illetve szervezheti meg az adott témával összefüggő tanítási órákat, foglalkozásokat. </p>
+                <p>A Témahétre az egész Kárpát-medencéből – így a határon túlról is – csatlakozhatnak magyar nyelven oktató általános iskolák és középfokú oktatási intézmények.</p>
+                <p><strong>Te is részese lehetsz a változásnak!</strong>Nem számít, hogy kicsiben vagy nagyban kezdesz – minden apró lépés számít! Kezdheted például azzal, hogy csökkented a műanyaghasználatot, energiatakarékos megoldásokat választasz, vagy támogatod a helyi termelőket.</p>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="content2">
+                <h2>📅 Mi vár rád ezen a héten?</h2>
+                <ul>
+                    <li>Izgalmas előadások fenntarthatóságról, környezetvédelemről és zöld technológiákról</li>
+                    <li><strong>DIY workshopok</strong>, ahol újrahasznosított anyagokból alkothatsz</li>
+                    <li>Fenntartható életmód tippek, amelyeket könnyedén beépíthetsz a mindennapjaidba</li>
+                    <li>Közösségi események, faültetés és szemétszedési akciók</li>
+                </ul>
+            </div> 
+             <div class="container_img special">
+                <img src="kepek/makk.jpg" alt="makk">
+            </div>
+        </div>
+        <div class="container1 form-special" id="co2">
+            <div class="form_content">
+            <form action="" name="cigany">
+                <h1>Számold ki mennyi a CO₂ kibocsáltásod!</h1>
+               <label for="futas">Hány km-t haladsz a járműveddel egy év eltellte után?</label>
+               <input type="number" name="futas" id="futasteljesitmeny" placeholder="100" min="0">
+                <br>
+               <label for="fogy">Mennyi a fogyasztása az autódnak?(/100km)</label>
+               <input type="number" name="fogy" id="fogyasztas" placeholder="8" min="0">
+                <br>
+               <label for="uzemanyag">Mivel megy az autód?</label>
+               <select name="uzemanyag" id="">
+                   <option value="benzin">Benzin</option>
+                   <option value="dizel">Dízel</option>
+               </select><br>
+               <button type="button" onclick="hatja()">Számolás</button>
+               <h4 id="co">
+                    Kibocsáltás(Kg)
+               </h4>
+               <div style="text-align: center;">
+                <label for="csuszka">Rate-eljen minket</label><br>
+               <input type="range" name="csuszka" id="" oninput="jahat()" min="0" max="10" step="1">
+               <p id="visszajelzes"></p>
+               </div>
+               
+            </div>
         </form>
+        </div>
+
 
     </main>
-    <footer>
+    <footer id="kapcs">
         <p>
-            Készítette: Roli Sziksz, Béládi Barnabás, Simó Bertalan
+            &copy; Béládi Barnabás & Sziksz Roland & Simó Bertalan 2025. Minden Jog Fenntartva
         </p>
     </footer>
     <script src="script.js"></script>
